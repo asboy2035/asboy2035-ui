@@ -1,0 +1,31 @@
+{
+  "name": "asboy2035-ui",
+  "version": "1.0.0",
+  "description": "ash's personal UI component library 💖",
+  "main": "dist/asboy2035-ui.umd.js",
+  "module": "dist/asboy2035-ui.es.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "keywords": ["vue", "components", "ash", "ui", "slay"],
+  "author": "asboy2035",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:types": "vue-tsc --declaration --emitDeclarationOnly --outDir dist",
+    "build:lib": "vite build",
+    "build": "npm run build:lib && npm run build:types",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.4",
+    "vite-plugin-vue-devtools": "^7.7.2",
+    "vue-tsc": "^2.2.8"
+  }
+}

@@ -1,0 +1,19 @@
+<template>
+  <div class="hStack">
+    <slot />
+  </div>
+</template>
+
+<style scoped>
+  .hStack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .hStack.spaced {
+    column-gap: 1rem;
+    row-gap: 0;
+  }
+</style>

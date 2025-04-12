@@ -1,0 +1,24 @@
+/*Color palette*/
+:root {
+  --background-color: white;
+  --foreground-color: rgba(226, 226, 226, 0.35);
+  --text-color: black;
+
+  --swirly-01: white;
+  --swirly-02: rgb(242, 178, 227);
+  --swirly-03: rgb(204, 163, 255);
+  --swirly-04: rgb(172, 189, 255);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: black;
+    --foreground-color: rgba(45, 45, 45, 0.35);
+    --text-color: rgb(240, 240, 240);
+
+    --swirly-01: black;
+    --swirly-02: rgb(20, 0, 26);
+    --swirly-03: rgb(21, 0, 46);
+    --swirly-04: rgb(0, 7, 36);
+  }
+}
