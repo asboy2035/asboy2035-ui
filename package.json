@@ -8,7 +8,7 @@
   "files": ["dist"],
   "keywords": ["vue", "components", "ash", "ui", "slay"],
   "author": "asboy2035",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
