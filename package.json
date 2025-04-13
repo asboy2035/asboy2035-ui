@@ -1,6 +1,6 @@
 {
   "name": "asboy2035-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ash's personal UI component library 💖",
   "main": "dist/asboy2035-ui.umd.js",
   "module": "dist/asboy2035-ui.es.js",
