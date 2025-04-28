@@ -1,28 +1,28 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 import path from 'path'
 
 export default defineConfig({
-  plugins: [vue()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
-  },
+  plugins: [
+    vue(),
+    cssInjectedByJsPlugin()  // ✨ SLAY MAGIC HERE ✨
+  ],
   build: {
     lib: {
-      entry: 'src/index.ts',
-      name: 'asboy2035-ui',
+      entry: path.resolve(__dirname, 'src/index.ts'),
+      name: 'Asboy2035UI',
       fileName: (format) => `asboy2035-ui.${format}.js`,
+      formats: ['es', 'umd']
     },
-    cssCodeSplit: false,
     rollupOptions: {
       external: ['vue'],
       output: {
         globals: {
-          vue: 'Vue',
-        },
-      },
+          vue: 'Vue'
+        }
+      }
     },
-  },
+    cssCodeSplit: false  // still leave this true to keep control
+  }
 })
